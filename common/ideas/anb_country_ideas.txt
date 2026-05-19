@@ -2692,7 +2692,6 @@ A81_ideas = {
 		improve_relation_modifier = 0.2
 	}
 	A81_giberd_civil_engineering_academy = {
-		development_cost = -0.1
 		build_time = -0.15
 	}
 	A81_golden_giberdi = {
