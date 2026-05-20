@@ -691,32 +691,6 @@ mandatory_service = {
 	}
 }
 
-
-professional_diplomatic_corps = {
-	monarch_power = DIP
-	potential = {
-		has_idea_group = diplomatic_ideas
-		has_idea_group = quality_ideas
-	}
-	
-	allow = {
-		full_idea_group = diplomatic_ideas
-		full_idea_group = quality_ideas
-	}
-	
-	diplomatic_reputation = 1
-	war_exhaustion = -0.05
-
-	effect = {}
-	removed_effect = {}
-	ai_will_do = {
-		factor = 0.7
-	}
-
-}
-
-
-
 colonial_companies_act = {
 	monarch_power = DIP
 	potential = {
@@ -991,49 +965,6 @@ fortified_trading_posts = {
 			factor = 1.5
 			trade_income_percentage = 0.5
 		}
-	}
-}
-
-the_integrated_administration_act = {
-	monarch_power = DIP
-	
-	potential = {
-		has_idea_group = influence_ideas
-		has_idea_group = quality_ideas
-	}
-	
-	allow = {
-		full_idea_group = influence_ideas
-		full_idea_group = quality_ideas
-	}	
-	
-	vassal_income = 0.25
-	diplomatic_annexation_cost = -0.1
-	
-	effect = {}
-	removed_effect = {}
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 0
-			NOT = { vassal = 1 }
-		}
-		modifier = {
-			factor = 1.5
-			vassal = 2
-		}
-		modifier = {
-			factor = 1.5
-			vassal = 3
-		}			
-		modifier = {
-			factor = 1.5
-			vassal = 4
-		}
-		modifier = {
-			factor = 1.5
-			vassal = 5
-		}			
 	}
 }
 
@@ -2027,3 +1958,148 @@ native_emissaries_act = {
 	}
 }
 
+#submod policies begin here
+
+mages_in_the_court = {
+	monarch_power = DIP
+	
+	potential = {
+		has_idea_group = artificer_ideas
+		has_idea_group = court_ideas
+	}
+	
+	allow = {
+		full_idea_group = artificer_ideas
+		full_idea_group = court_ideas
+	}
+	
+	advisor_cost = -0.15
+	
+
+	ai_will_do = {
+		factor = 1.0
+	}
+}
+
+enchanting_diplomats = {
+	monarch_power = DIP
+	
+	potential = {
+		has_idea_group = artificer_ideas
+		has_idea_group = diplomatic_ideas
+	}
+	
+	allow = {
+		full_idea_group = artificer_ideas
+		full_idea_group = diplomatic_ideas
+	}
+	
+	idea_cost = -0.1
+
+	ai_will_do = {
+		factor = 1.0
+	}
+}
+
+magisterium_endorsement = {
+	monarch_power = DIP
+	
+	potential = {
+		has_idea_group = artificer_ideas
+		has_idea_group = influence_ideas
+	}
+	
+	allow = {
+		full_idea_group = artificer_ideas
+		full_idea_group = influence_ideas
+	}
+	
+	province_warscore_cost = -0.1
+
+	ai_will_do = {
+		factor = 1.0
+	}
+}
+
+mage_lighthouses = {
+	monarch_power = DIP
+	
+	potential = {
+		has_idea_group = artificer_ideas
+		has_idea_group = maritime_ideas
+	}
+	
+	allow = {
+		full_idea_group = artificer_ideas
+		full_idea_group = maritime_ideas
+	}
+	
+	own_coast_naval_combat_bonus = 1.0
+	hostile_attrition = 1
+
+	ai_will_do = {
+		factor = 1.0
+	}
+}
+
+
+
+frontiers_of_thought = {
+	monarch_power = DIP
+	
+	potential = {
+		has_idea_group = magocracy_ideas
+		has_idea_group = expansion_ideas
+	}
+	
+	allow = {
+		full_idea_group = magocracy_ideas
+		full_idea_group = expansion_ideas
+	}
+	
+	global_colonial_growth = 30
+
+	ai_will_do = {
+		factor = 1.0
+	}
+}
+
+eight_schools_of_magic = {
+	monarch_power = DIP
+	
+	potential = {
+		has_idea_group = magocracy_ideas
+		has_idea_group = humanist_ideas
+	}
+	
+	allow = {
+		full_idea_group = magocracy_ideas
+		full_idea_group = humanist_ideas
+	}
+	
+	prestige = 1
+
+	ai_will_do = {
+		factor = 1.0
+	}
+}
+
+revelianist_thought = {
+	monarch_power = DIP
+	
+	potential = {
+		has_idea_group = magocracy_ideas
+		has_idea_group = religious_ideas
+	}
+	
+	allow = {
+		full_idea_group = magocracy_ideas
+		full_idea_group = religious_ideas
+	}
+	
+    same_religion_advisor_cost = -0.15
+
+	ai_will_do = {
+		factor = 1.0
+	}
+}
