@@ -1321,6 +1321,7 @@ country_event = {
 					tag = A06
 					tag = A19
 					tag = V06
+					tag = Z55
 				}
 			}
 			if = { #artificery only mode
@@ -1329,6 +1330,7 @@ country_event = {
 						tag = A06
 						tag = A19
 						tag = V06
+						tag = Z55
 					}
 				}
 				set_country_flag = magic_artificery_artificery_only

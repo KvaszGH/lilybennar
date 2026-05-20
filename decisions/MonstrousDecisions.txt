@@ -59,6 +59,106 @@ country_decisions = {
 			}
 		}
 	}
+
+		start_passive_demonsterization = {
+		potential = {
+			has_country_modifier = monstrous_nation
+			NOT = { has_country_flag = passively_removing_monstrous }
+			NOT = { has_country_flag = removing_monstrous }
+			NOT = { has_country_flag = no_longer_monstrous }
+		}
+		allow = {
+			hidden_trigger = {
+				has_country_modifier = monstrous_nation
+			}
+			#NOT = { current_age = age_of_discovery }
+			has_institution = feudalism
+			stability = 0
+
+			any_known_country = {
+				NOT = { has_country_modifier = monstrous_nation }
+			}
+			
+			any_owned_province = {
+				OR = {
+					AND = {
+						has_owner_culture = yes
+						has_dwarven_minority_trigger = yes
+					}
+					AND = {
+						has_owner_culture = yes
+						has_elven_minority_trigger = yes
+					}
+					AND = {
+						has_owner_culture = yes
+						has_gnomish_minority_trigger = yes
+					}
+					AND = {
+						has_owner_culture = yes
+						has_half_elven_minority_trigger = yes
+					}
+					AND = {
+						has_owner_culture = yes
+						has_halfling_minority_trigger = yes
+					}
+					AND = {
+						has_owner_culture = yes
+						has_harimari_minority_trigger = yes
+					}
+					AND = {
+						has_owner_culture = yes
+						has_human_minority_trigger = yes
+					}
+					has_dwarven_majority_trigger = yes
+					has_elven_majority_trigger = yes
+					has_gnomish_majority_trigger = yes
+					has_half_elven_majority_trigger = yes
+					has_halfling_majority_trigger = yes
+					has_harimari_majority_trigger = yes
+					has_human_majority_trigger = yes
+				}
+			}
+			OR = {
+				medium_tolerance_dwarven_race_trigger = yes
+				high_tolerance_dwarven_race_trigger = yes
+				
+				medium_tolerance_elven_race_trigger = yes
+				high_tolerance_elven_race_trigger = yes
+				
+				medium_tolerance_gnomish_race_trigger = yes
+				high_tolerance_gnomish_race_trigger = yes
+				
+				medium_tolerance_half_elven_race_trigger = yes
+				high_tolerance_half_elven_race_trigger = yes
+				
+				medium_tolerance_halfling_race_trigger = yes
+				high_tolerance_halfling_race_trigger = yes
+				
+				medium_tolerance_harimari_race_trigger = yes
+				high_tolerance_harimari_race_trigger = yes
+				
+				medium_tolerance_human_race_trigger = yes
+				high_tolerance_human_race_trigger = yes
+			}
+		}
+		effect = {
+			start_passive_demonsterization_effect = yes
+
+			custom_tooltip = start_passive_demonsterization
+		}
+		ai_will_do = { 
+			factor = 400 
+			modifier = {
+				factor = 0
+				OR = {
+					ruler_has_personality = cruel_personality
+					ruler_has_personality = malevolent_personality
+					ruler_has_personality = zealot_personality
+					NOT = { want_to_decrease_monstrous = yes }
+				}
+			}
+		}
+	}
 	
 	current_monstrous_level = {
 		potential = {

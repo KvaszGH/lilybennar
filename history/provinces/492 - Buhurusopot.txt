@@ -1,9 +1,8 @@
 
 #492 - Puerto Rico
 
-owner = U05
-controller = U05
-add_core = U05
+owner = L28
+controller = L28
 add_core = L27
 culture = shasouran
 religion = elikhetist

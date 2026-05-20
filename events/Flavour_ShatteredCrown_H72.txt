@@ -1,4 +1,4 @@
-# í <-- This is here to make sure that the encoding stays ANSI, do not remove it
+# ï¿½ <-- This is here to make sure that the encoding stays ANSI, do not remove it
 
 namespace = shatteredcrown
 
@@ -1602,9 +1602,7 @@ country_event = {
 			change_tag = Z54
 			hidden_effect = { restore_country_name = yes }
 			
-			# Karakhanbar Comment Out
-			#swap_non_generic_missions = yes
-			custom_tooltip = karakhanbar_is_commented_out
+			swap_non_generic_missions = yes
 
 			country_event = { id = orcform.1 days = 1 }
 			country_event = { id = ideagroups.1 } #Swap Ideas
@@ -2496,7 +2494,7 @@ country_event = {
 		}
 	}
 	
-	#Mithradhûm
+	#Mithradhï¿½m
 	option = {
 		name = shatteredcrown.50.b
 		ai_chance = { factor = 90 }
@@ -2545,7 +2543,7 @@ country_event = {
 		}
 	}
 	
-	#Haraz Orldhûm
+	#Haraz Orldhï¿½m
 	option = {
 		name = shatteredcrown.50.c
 		ai_chance = { factor = 90 }

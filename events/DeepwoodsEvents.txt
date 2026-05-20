@@ -425,7 +425,7 @@ country_event = {
 				change_government = monarchy
 				add_stability_or_adm_power = yes
 				define_ruler = {
-					dynasty = "Cenág" 
+					dynasty = "Cenï¿½g" 
 					min_age = 40
 					max_age = 90
 					culture = wood_elf
@@ -844,7 +844,7 @@ country_event = {
 				change_government = monarchy
 				add_stability_or_adm_power = yes
 				define_ruler = {
-					dynasty = "Ghúl"
+					dynasty = "Ghï¿½l"
 					min_age = 40
 					max_age = 90
 					culture = wood_elf
@@ -1018,9 +1018,7 @@ country_event = {
 			change_tag = Z54
 			hidden_effect = { restore_country_name = yes }
 
-			# Karakhanbar Comment Out
-			#swap_non_generic_missions = yes
-			custom_tooltip = karakhanbar_is_commented_out
+			swap_non_generic_missions = yes
 
 			country_event = { id = orcform.1 days = 1 }
 			country_event = { id = ideagroups.1 } #Swap Ideas
@@ -1368,9 +1366,7 @@ country_event = {
 		hidden_effect = { restore_country_name = yes }
 
 		
-		# Karakhanbar Comment Out
-		#swap_non_generic_missions = yes
-		custom_tooltip = karakhanbar_is_commented_out
+		swap_non_generic_missions = yes
 
 		swap_free_idea_group = yes
 		if = {
@@ -1672,9 +1668,7 @@ country_event = {
 		change_primary_culture = karakhanbari_orc
 		hidden_effect = { restore_country_name = yes }
 		
-		# Karakhanbar Comment Out
-		#swap_non_generic_missions = yes
-		custom_tooltip = karakhanbar_is_commented_out
+		swap_non_generic_missions = yes
 
 		country_event = { id = orcform.1 days = 1 }
 		country_event = { id = ideagroups.1 } #Swap Ideas

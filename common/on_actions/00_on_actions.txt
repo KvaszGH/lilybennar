@@ -14611,7 +14611,7 @@ on_five_year_pulse = {
 		
 		
 
-		#flavour_karakhanbar.82 #Karakhanbar Event Manager To Be Fixed (do when re-adding? Karakhanbar Comment Out)
+		flavour_karakhanbar.82 #Karakhanbar Event Manager To Be Fixed (do when re-adding? Karakhanbar Comment Out)
 		seinathil.2 #Notestock
 		seinathil.15 #Notestock sucks
 

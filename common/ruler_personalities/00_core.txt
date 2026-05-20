@@ -4219,6 +4219,11 @@ mage_personality = {	#Powerful Mage
 					has_reform = eternal_council
 				}
 			}
+
+			modifier = {
+				factor = 2
+				has_idea = council_of_mages
+			}
 			
 			modifier = {
 				factor = 2
@@ -4439,6 +4444,11 @@ mage_personality = {	#Powerful Mage
 					has_reform = nobles_of_the_wand_reform #enabled by eoa magocratic path
 				}
 			}
+
+			modifier = {
+				factor = 2
+				has_idea = council_of_mages
+			}
 			
 			modifier = {
 				factor = 10
@@ -4646,6 +4656,11 @@ mage_personality = {	#Powerful Mage
 					has_reform = magical_elite_reform
 					has_reform = eternal_council
 				}
+			}
+
+			modifier = {
+				factor = 2
+				has_idea = council_of_mages
 			}
 			
 			modifier = {
