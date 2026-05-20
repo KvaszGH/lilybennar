@@ -52,6 +52,26 @@ country_event = { # Powerful Mage Heir
 				consort_is_powerful_mage = yes
 			}
 		}
+				modifier = {
+			factor = 0.5
+			AND = {
+				has_idea = council_of_mages
+				# avoid stacking the MTTH reduction too high with other sources
+				NOT = {
+					AND = {
+						has_global_flag = crimson_deluge
+						is_year = 1560
+						capital_scope = { superregion = escann_superregion }
+					}
+				}
+				NOT = {
+					AND = {
+						ruler_has_mage_personality = yes
+						consort_has_mage_personality = yes
+					}
+				}
+			}
+		}
 	}
 
 	option = {
@@ -87,6 +107,7 @@ country_event = { # Powerful Mage Bastard - child
 			ruler_is_powerful_mage = yes
 			has_reform = magical_elite_reform
 			has_reform = endhuvi_erudite_court_reform
+			has_idea = council_of_mages
 		}
 		has_government_attribute = heir
 		NOT = { government = theocracy }
@@ -126,6 +147,10 @@ country_event = { # Powerful Mage Bastard - child
 				ruler_has_personality = naive_personality
 				ruler_has_personality = silver_tongue_personality
 			}
+		}
+		modifier = {
+			factor = 0.5
+			has_idea = council_of_mages
 		}
 	}
 

@@ -11,7 +11,7 @@ ancestor_just_personality = {
 	heir_allow = {
 		chance = {
 			modifier = {
-				factor = 1
+				factor = 1 
 				heir_ADM = 6
 			}
 		}
@@ -1747,6 +1747,11 @@ ancestor_mage_personality = {	#Powerful Mage
 					has_reform = eternal_council
 				}
 			}
+
+			modifier = {
+				factor = 2
+				has_idea = council_of_mages
+			}
 			
 			modifier = {
 				factor = 1.75
@@ -1927,6 +1932,11 @@ ancestor_mage_personality = {	#Powerful Mage
 				factor = 1.25
 				heir_has_personality = scholar_personality
 			}
+
+			modifier = {
+				factor = 2
+				has_idea = council_of_mages
+			}
 			
 			modifier = {
 				factor = 1.75
@@ -2080,6 +2090,11 @@ ancestor_mage_personality = {	#Powerful Mage
 			modifier = {
 				factor = 1.25
 				consort_has_personality = scholar_personality
+			}
+
+			modifier = {
+				factor = 2
+				has_idea = council_of_mages
 			}
 			
 			modifier = {

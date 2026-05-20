@@ -105,6 +105,7 @@ country_event = {
 					has_global_flag = delete_east_serpentspine_region
 					has_global_flag = delete_west_serpentspine_region
 					has_global_flag = delete_insyaa_region
+					has_global_flag = delete_regions_submod
 				}
 			}
 			custom_tooltip = settings_regions_are_gonna_get_removed_tt
@@ -165,6 +166,16 @@ country_event = {
 			}
 			if = { limit = { has_global_flag = delete_insyaa_region }
 				oceania = { destroy_province_permanently = yes }
+			}
+			if = { limit = { has_global_flag = delete_regions_submod }
+				oceania = { destroy_province_permanently = yes }
+				gozengun_superregion = { destroy_province_permanently = yes }
+				east_serpentspine_superregion = { destroy_province_permanently = yes }
+				yanshen_superregion = { destroy_province_permanently = yes }
+				vimdatrong_superregion = { destroy_province_permanently = yes }
+				forbidden_lands_superregion = { destroy_province_permanently = yes }
+				kheionai_superregion = { destroy_province_permanently = yes }
+				rahen_superregion = { destroy_province_permanently = yes }
 			}
 		}
 		set_global_flag = settings_done
@@ -380,6 +391,21 @@ country_event = {
 
 		custom_tooltip = tag_in_this_region_tt
 		custom_tooltip = tag_need_this_region_tt
+		hidden_effect = { country_event = { id = anb_settings.100 } }
+	}
+
+		# Submod selected regions
+	option = {
+		name = anb_settings.3.s
+		trigger = { NOT = { has_global_flag = delete_regions_submod } }
+		custom_tooltip = disable_region_tt
+		set_global_flag = delete_regions_submod
+		hidden_effect = { country_event = { id = anb_settings.100 } }
+	}
+	option = {
+		name = anb_settings.3.sx
+		trigger = { has_global_flag = delete_regions_submod }
+		clr_global_flag = delete_regions_submod
 		hidden_effect = { country_event = { id = anb_settings.100 } }
 	}
 	

@@ -1,8 +1,7 @@
 # No previous file for Nakhchivan
 
-owner = F69
-controller = F69
-add_core = F69
+owner = L17
+controller = L17
 add_core = L17
 culture = taafi
 religion = fangaulan_pantheon

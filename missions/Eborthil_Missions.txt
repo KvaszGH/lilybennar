@@ -1152,7 +1152,8 @@ A47_development = {
 					exists = U01
 					NOT = { is_rival = U01 }
 				}
-				create_alliance = U01
+				add_historical_friend = U01
+				# create_alliance = U01
 			}
 		}
 	}
