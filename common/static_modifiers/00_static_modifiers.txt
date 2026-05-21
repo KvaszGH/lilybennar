@@ -1944,7 +1944,7 @@ karma_just_right =
 
 	war_exhaustion = -0.03
 	yearly_corruption = -0.1
-	discipline = 0.035
+	army_tradition = 0.5 	#submod change from 3.5 discipline 
 	ae_impact = -0.1
 }
 

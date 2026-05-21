@@ -21,7 +21,7 @@ cannorian = {
 			ravelian
 		}
 		country = {
-			tolerance_heathen = 2
+			infatry_power = 0.05 	# submod change from 2 toh
 			stability_cost_modifier = -0.15
 		}
 		country_as_secondary = {
@@ -592,7 +592,7 @@ cannorian = {
 				}
 			}
 			use_warrior_automata = {
-				cost = 50
+				cost = 150 	#submod change from 50
 				potential = {
 					NOT = { tag = Z97 }
 				}

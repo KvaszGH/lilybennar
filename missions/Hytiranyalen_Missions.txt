@@ -850,12 +850,6 @@ hytiranyalen_3 = {
 						who = ROOT
 						modifier = sent_gift
 					}
-				}
-			}
-			F80 = { has_50_opinion_improved_relation = { target = ROOT } }
-			has_spy_network_in = {
-				who = F27
-				value = 25
 			}
 			army_size_percentage = 1
 			663 = {
