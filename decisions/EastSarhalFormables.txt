@@ -769,6 +769,7 @@ country_decisions = {
 		}
 		
 		allow = {
+			is_year = 1525
 			religion = shadow_pact 
 			is_at_war = no
 			num_of_owned_provinces_with = {
