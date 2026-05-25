@@ -19,6 +19,7 @@ no_subterannean_race = {
 			tooltip = no_subterannean_race_tooltip
 			has_subterranean_race = no
 		}
+		always = no
 	}
 	picture = "non_subterran"
 	local_tax_modifier = -0.5
