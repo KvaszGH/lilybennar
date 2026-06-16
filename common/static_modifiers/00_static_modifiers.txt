@@ -152,7 +152,7 @@ coastal_sea = {
 tropical = {
 	local_colonial_growth = -10
 	supply_limit_modifier = -0.3
-	local_hostile_attrition = 2
+	local_hostile_attrition = 3 # Submod: to make tropical useful to beat enemies at least (2 -> 3)
 
 	local_development_cost = 0.05 #1.35
 
@@ -160,22 +160,22 @@ tropical = {
 }
 
 arctic = {
-	local_colonial_growth = -10
-	supply_limit_modifier = -0.4
+	local_colonial_growth = -30 # Submod: harder to colonize (-10 -> -30)
+	supply_limit_modifier = -0.1 # Submod: more supply (-0.4 -> -0.1)
 	local_hostile_attrition = 1
 
-	allowed_num_of_buildings = -1
-	local_development_cost = 0.5
+	#allowed_num_of_buildings = -1 # Submod: building slot debuff removed
+	local_development_cost = 0.1 # Submod: cheaper devving (already shitty land usually) (0.5 -> 0.1)
 
 	picture = "climate_arctic"
 }
 
 arid = {
 	local_colonial_growth = -10
-	supply_limit_modifier = -0.2
+	supply_limit_modifier = -0.3 # Submod: slightly worse supply (-0.2 -> -0.3)
 	local_hostile_attrition = 1
 
-	local_development_cost = 0.1
+	local_development_cost = 0.05 # Submod: cheaper devving (0.1 -> 0.05)
 
 	picture = "climate_arid"
 }
