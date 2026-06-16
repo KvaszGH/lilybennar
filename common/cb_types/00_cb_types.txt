@@ -1615,6 +1615,7 @@ cb_religious_league = {
 		is_in_league_war = no
 		is_league_leader = yes
 		is_revolutionary = no
+		ai = no # Submod: AI can't declare league war
 	}
 
 	prerequisites = {
