@@ -969,7 +969,7 @@ divination_2_manipulated_fortune_mod = {
 divination_2_manipulated_fortune_mod_buffed = {
 	#global_attacker_dice_roll_bonus = 1
 	#global_defender_dice_roll_bonus = 1
-	discipline = 0.5
+	discipline = 0.05
 	picture = "war_magic"
 }
 divination_3_foresight_mod = {
