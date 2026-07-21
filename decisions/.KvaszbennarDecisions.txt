@@ -1,0 +1,208 @@
+country_decisions = {
+	heal_lobotomy = {
+ 		major = yes
+		color = { 235 102 255 }
+		
+ 		potential = {
+ 			ai = no
+			has_country_modifier = kvaszbennar_lobotomize
+ 		}
+ 		
+ 		provinces_to_highlight = {
+ 			
+ 		}
+ 		
+ 		allow = {
+ 			has_country_modifier = kvaszbennar_lobotomize
+ 		}
+ 		
+ 		effect = {
+ 			remove_country_modifier = kvaszbennar_lobotomize
+ 		}
+ 		ai_will_do = {
+ 			factor = 0
+ 		}
+ 	}
+
+	give_up_hegemony = {
+ 		major = yes
+		color = { 235 102 255 }
+		
+ 		potential = {
+ 			ai = no
+			is_hegemon = yes
+ 		}
+ 		
+ 		provinces_to_highlight = {
+ 			
+ 		}
+ 		
+ 		allow = {
+ 			NOT = {
+				hegemon_strength = 0.5
+			}
+			is_at_war = no
+ 		}
+ 		
+ 		effect = {
+ 			remove_hegemon = yes
+			add_country_modifier = {
+				name = lost_hegemony
+				duration = 7300
+			}
+ 		}
+ 		ai_will_do = {
+ 			factor = 0
+ 		}
+ 	}
+	
+	expanded_infra_potential = {
+		major = yes
+        color = { 235 102 255 }
+        potential = {
+            ai = no
+			any_owned_province = { num_of_times_expanded_infrastructure = 1 }
+        }
+        
+        allow = {
+            always = no
+        }
+        
+        provinces_to_highlight = {
+            owned_by = ROOT
+            development = 15
+            NOT = { num_of_times_expanded_infrastructure = 1 }
+        }
+        
+        effect = {
+            
+        }
+        ai_will_do = {
+            factor = 0
+        }
+    }
+	
+	expand_parliament = {
+		major = yes
+        color = { 235 102 255 }
+		potential = {
+			ai = no 
+			has_parliament = yes
+		}
+		allow = {
+			NOT = {
+				all_owned_province = { has_seat_in_parliament = yes }
+			}
+		}
+		effect = {
+			custom_tooltip = add_all_provinces_parliament_seats_tt
+			hidden_effect = {
+				every_owned_province = {
+					limit = { has_seat_in_parliament = no }
+					set_seat_in_parliament = yes
+				}
+			}
+			hidden_effect = {
+				every_owned_province = {
+					limit = { has_seat_in_parliament = yes }
+					add_pop_modifier = {race = all class = parliament amount = 25percent resource = tax onbase = base_tax}
+					add_pop_modifier = {race = all class = parliament amount = 25percent resource = goods_produced onbase = base_production}
+					add_pop_modifier = {race = all class = parliament amount = 20percent resource = manpower onbase = base_manpower}
+				}
+			}
+		}
+		
+		ai_will_do = {
+            factor = 0
+        }
+	}
+	
+	extra_colonial = {
+ 		major = yes
+		color = { 235 102 255 }
+ 		potential = {
+ 			ai = no
+ 		}
+ 		allow = {
+ 			num_of_ports = 1
+			dip_tech = 9
+			NOT = {
+				num_of_colonists = 1
+			}
+ 		}
+ 		effect = {
+ 			add_adm_power = -100
+			add_dip_power = -100
+			add_mil_power = -100
+			add_treasury = -500
+			add_country_modifier = {
+				name = kvaszbennar_colonize
+				duration = 10950
+			}
+ 		}
+ 		ai_will_do = {
+ 			factor = 0
+ 		}
+ 	}
+	
+	dev_sum_clicks_decision = {
+		major = yes
+		color = { 235 102 255 }
+		
+		potential = {
+			ai = no
+		}
+		
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = dev_sum_clicks_decision_tooltip
+				always = no
+			}
+		}
+		
+		effect = {
+			
+		}
+		
+		ai_will_do = {
+            factor = 0
+        }
+	}
+	
+	advisor_events_check = {
+		major = yes
+		color = { 235 102 255 }
+		
+		potential = {
+			ai = no
+		}
+		
+		allow = {
+			always = no
+			custom_trigger_tooltip = {
+				tooltip = "Army Reformer"
+				NOT = { has_country_flag = military_reforms }
+			}
+			custom_trigger_tooltip = {
+				tooltip = "Captain"
+				NOT = { has_country_flag = grand_captain }
+			}
+			custom_trigger_tooltip = {
+				tooltip = "Commandant"
+				NOT = { has_country_flag = commandant }
+			}
+			custom_trigger_tooltip = {
+				tooltip = "Radical Reforms"
+				NOT = { has_country_flag = radical_mercantilist_reforms }
+			}
+		}
+		
+		effect = {
+			
+		}
+		
+		ai_will_do = {
+            factor = 0
+        }
+	}
+}

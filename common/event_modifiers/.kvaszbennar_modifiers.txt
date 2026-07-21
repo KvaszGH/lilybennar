@@ -1,0 +1,13 @@
+kvaszbennar_lobotomize = {
+	can_not_declare_war = yes
+	can_not_build_colonies = yes
+	can_not_build_buildings = yes
+	can_not_send_merchants = yes
+	diplomatic_upkeep = -10
+	diplomats = -10
+}
+
+kvaszbennar_colonize = {
+	colonists = 1
+	may_explore = yes
+}

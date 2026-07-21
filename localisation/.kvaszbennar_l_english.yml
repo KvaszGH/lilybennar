@@ -1,0 +1,18 @@
+﻿l_english:
+
+ give_up_hegemony_title:0 "Surrender Our Hegemony"
+ give_up_hegemony_desc:0 "Every Empire must fall sooner or later. Our time has finally come."
+ expanded_infra_potential_title:0 "Expand Infrastructure Potential"
+ expanded_infra_potential_desc:0 "I love trains."
+ expand_parliament_title:0 "Parliamentary Representation for Everyone"
+ expand_parliament_desc:0 "We need to hear the voice of the people."
+ add_all_provinces_parliament_seats_tt:0 "Add a parliament seat to every province."
+ kvaszbennar_colonize:0 "Colonial Investments"
+ extra_colonial_title:0 "Funds for Colonial Efforts"
+ extra_colonial_desc:0 "We like sending people overseas into uncharted lands. Fun!"
+ dontcare:0 "Don't care, later"
+ dev_sum_clicks_decision_title:0 "Dev Clicks Counter"
+ dev_sum_clicks_decision_desc:0 "To see a summary of your manual development growth via development clicks, hover over the 'requirements' for this decision."
+ dev_sum_clicks_decision_tooltip:0 "Manual Development:\n\n§W£adm£ Development Gained: §G[This.dev_adm_clicks.GetValue] \n§W£dip£ Development Gained: §G[This.dev_dip_clicks.GetValue] \n§W£mil£ Development Gained: §G[This.dev_mil_clicks.GetValue] \n\n§WTotal Development Gained: §Y[This.dev_sum_clicks.GetValue]"
+ advisor_events_check_title:0 "Advisor Events Check"
+ advisor_events_check_desc:0 "Get out until I'm fighting a REAL war."
