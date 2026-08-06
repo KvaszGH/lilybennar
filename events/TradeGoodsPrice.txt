@@ -3067,3 +3067,39 @@ country_event = {
 		hidden_effect = { set_global_flag = cloves_more_expensive }
 	}
 }
+
+# Cloves Abundance # submod
+country_event = {
+	id = anb_price.55
+	title = anb_price.55.t
+	desc = anb_price.55.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		capital_scope = { continent = sarhal }
+		cloves = 5
+		NOT = { has_global_flag = cloves_abundance_happened }
+		calc_true_if = {
+			serpentspine = { type = all trade_goods = cloves }
+			amount = 7
+		}
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = anb_price.55.a
+		change_price = {
+			trade_goods = cloves
+			key = CLOVES_ABUNDANCE
+			value = -0.2
+			duration = -1
+		}
+		hidden_effect = { set_global_flag = cloves_abundance_happened }
+	}
+}

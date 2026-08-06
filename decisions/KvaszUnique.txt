@@ -1,0 +1,139 @@
+country_decisions = {
+	give_up_hegemony = {
+ 		major = yes
+		color = { 235 102 255 }
+
+ 		potential = {
+ 			ai = no
+			is_hegemon = yes
+ 		}
+
+ 		provinces_to_highlight = {
+
+ 		}
+
+ 		allow = {
+ 			NOT = {
+				hegemon_strength = 0.5
+			}
+			is_at_war = no
+ 		}
+
+ 		effect = {
+ 			remove_hegemon = yes
+			add_country_modifier = {
+				name = lost_hegemony
+				duration = 7300
+			}
+ 		}
+		
+ 		ai_will_do = {
+ 			factor = 0
+ 		}
+ 	}
+	
+	expanded_infra_potential = {
+		major = yes
+        color = { 235 102 255 }
+		
+        potential = {
+            ai = no
+			any_owned_province = { num_of_times_expanded_infrastructure = 1 }
+        }
+        
+        allow = {
+            always = no
+        }
+        
+        provinces_to_highlight = {
+            owned_by = ROOT
+			OR = {
+				AND = {
+					development = 15
+					NOT = { num_of_times_expanded_infrastructure = 1 }
+				}
+				AND = {
+					development = 30
+					NOT = { num_of_times_expanded_infrastructure = 2 }
+				}
+				AND = {
+					development = 45
+					NOT = { num_of_times_expanded_infrastructure = 3 }
+				}
+				AND = {
+					development = 60
+					NOT = { num_of_times_expanded_infrastructure = 4 }
+				}
+			}
+        }
+        
+        effect = {
+            
+        }
+		
+        ai_will_do = {
+            factor = 0
+        }
+    }
+	
+	advisor_events_check = {
+		major = yes
+		color = { 235 102 255 }
+		
+		potential = {
+			ai = no
+		}
+		
+		allow = {
+			always = no
+			custom_trigger_tooltip = {
+				tooltip = "Army Reformer"
+				NOT = { has_country_flag = military_reforms }
+			}
+			custom_trigger_tooltip = {
+				tooltip = "Captain"
+				NOT = { has_country_flag = grand_captain }
+			}
+			custom_trigger_tooltip = {
+				tooltip = "Commandant"
+				NOT = { has_country_flag = commandant }
+			}
+			custom_trigger_tooltip = {
+				tooltip = "Radical Reforms"
+				NOT = { has_country_flag = radical_mercantilist_reforms }
+			}
+		}
+		
+		effect = {
+			
+		}
+		
+		ai_will_do = {
+            factor = 0
+        }
+	}
+	
+	dev_sum_clicks_decision = {
+		major = yes
+		color = { 235 102 255 }
+		
+		potential = {
+			ai = no
+		}
+		
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = dev_sum_clicks_decision_tooltip
+				always = no
+			}
+		}
+		
+		effect = {
+			
+		}
+		
+		ai_will_do = {
+            factor = 0
+        }
+	}
+}

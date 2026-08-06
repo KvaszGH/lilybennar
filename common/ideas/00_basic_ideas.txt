@@ -1981,6 +1981,7 @@ humanist_ideas = {
 
 	bonus = {
 		no_religion_penalty = yes #Submod
+		global_autonomy = -0.05 # submod
 		yearly_harmony = 0.25  # Used if religion uses harmony (confucianism)
 		#brahmins_muslim_loyalty_modifier = 0.1
 		#dhimmi_loyalty_modifier = 0.1
@@ -2504,7 +2505,7 @@ magocracy_ideas = {
 	category = DIP
 
 	bonus = {
-		mages_loyalty_modifier = 0.1 # change to new
+		give_magical_infrastructure_perm_bypass = yes
 	}
 	
 	trigger = {
@@ -2512,39 +2513,42 @@ magocracy_ideas = {
 	}
 
 	mage_contracts = {
-		global_tax_modifier = 0.2
+		advisor_cost = -0.1
 		effect = { on_idea_taken_effect = yes }
 		removed_effect = { on_idea_removed_effect = yes }
 	}
 	mage_blooded = {
-		improve_relation_modifier = 0.25
-		effect = { on_idea_taken_effect = yes }
-		removed_effect = { on_idea_removed_effect = yes }
-	}
-	hydromancy = {
-		monarch_spell_levels = 1
 		mages_mana_regen = 0.25
 		effect = { on_idea_taken_effect = yes }
 		removed_effect = { on_idea_removed_effect = yes }
 	}
+	hydromancy = {
+		mages_estate_experience_mod = 0.25
+		mages_ruler_experience_mod = 0.25
+		effect = { on_idea_taken_effect = yes }
+		removed_effect = { on_idea_removed_effect = yes }
+	}
 	endorsement_of_the_mages = {
-		mages_estate_experience_mod = 0.1
-		mages_ruler_experience_mod = 0.2
+		monarch_spell_levels = 1
+		max_estate_spell_levels = 1
 		effect = { on_idea_taken_effect = yes }
 		removed_effect = { on_idea_removed_effect = yes }
 	}
 	siege_magic = {
         mages_loyalty_modifier = 0.2
+		mages_influence_modifier = 0.1
 		effect = { on_idea_taken_effect = yes }
 		removed_effect = { on_idea_removed_effect = yes }
 	}
 	scrying_revenue_service = {
 		max_absolutism = 10
+		diplomatic_reputation = 1
 		effect = { on_idea_taken_effect = yes }
 		removed_effect = { on_idea_removed_effect = yes }
 	}
 	council_of_mages = { 
-		advisor_cost = -0.10
+		hostile_attrition = 1
+		max_hostile_attrition = 1
 		#Anbennar
 		
 		effect = { on_idea_taken_effect = yes on_idea_group_finished_effect = yes }

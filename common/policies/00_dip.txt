@@ -2077,7 +2077,10 @@ eight_schools_of_magic = {
 		full_idea_group = humanist_ideas
 	}
 	
-	prestige = 1
+	diplomatic_reputation = 1
+	relation_with_same_culture = 10
+	relation_with_same_culture_group = 10
+	relation_with_accepted_culture = 10
 
 	ai_will_do = {
 		factor = 1.0
