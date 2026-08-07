@@ -252,6 +252,11 @@
  anb_price.54.a:0 "The wonderful smell of profit!"
  clove_trade:0 "Clove Trade"
  
+ anb_price.55.t:0 "Cloves Abundance"
+ anb_price.55.d:0 "Cloves have always been the most valued of spices, an ingredient so rare some would have considered it as valuable as damestear. However, with the consolidation of Fahvanosy, more and more clove plantations have been founded, and the price of cloves have slowly but surely decreased. Although still one of the most valuable spices in the world, it is no longer as rare as it once was, and cloves are now available to the average trader, though still at an incredibly steep price."
+ anb_price.55.a:0 "At least its somewhat affordable now..."
+ CLOVES_ABUNDANCE:0 "Cloves Abundance"
+
  mithril:0 "Mithril"
  mithrilDESC:0 "The pinnacle of dwarven metallurgy, this metal is both lighter and stronger than steel, though significantly harder to make. The secrets of its forging and working are closely guarded secrets that were believed lost in the Last Days of the Dwarovar."
  

@@ -2187,7 +2187,7 @@ tactful_tactics = {
 	}
 
 	discipline = 0.02
-    diplomatic_reputation = 1
+    diplomatic_annexation_cost = -0.10
 
 	effect = {}
 	removed_effect = {}
