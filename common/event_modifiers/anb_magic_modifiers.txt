@@ -1048,9 +1048,10 @@ evocation_1_flaming_munitions_mod = {
 	artillery_power = 0.1
 	picture = "war_magic"
 }
-evocation_2_meteor_swarm_local_mod = {
-	fort_level = -10
-	local_fort_maintenance_modifier = -1
+evocation_2_meteor_swarm_local_mod = { # Submod: meteor swarm no longer fort nuke, just easy assaults
+	local_garrison_size = -0.5
+	local_assault_fort_cost_modifier = -0.5
+	local_assault_fort_ability = 1.0
 	trade_value = 0.01
 	picture = "evocation_mod_icon_spell_modifier"
 }
