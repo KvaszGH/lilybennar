@@ -3390,7 +3390,7 @@ merc_leashed_elementals = {
 	cost_modifier = 0.01
 	cavalry_weight = 0.33
 	artillery_weight = 0
-	min_size = 10
+	min_size = 6
 
 	trigger = { 
 		OR = {
@@ -3413,7 +3413,7 @@ merc_greater_leashed_elementals = {
 	cost_modifier = 0.01
 	cavalry_weight = 0.33
 	artillery_weight = 0
-	min_size = 10
+	min_size = 6
 
 	trigger = { has_country_modifier = conjuration_2_greater_summon_elementals_mod }
 
@@ -3432,7 +3432,7 @@ merc_spiritfire_elementals = {
 	cost_modifier = 0.01
 	cavalry_weight = 0.33
 	artillery_weight = 0
-	min_size = 10
+	min_size = 6
 
 	trigger = { has_country_modifier = conjuration_2_summon_spiritfire_elementals_mod }
 
