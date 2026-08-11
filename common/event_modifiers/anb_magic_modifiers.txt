@@ -243,12 +243,12 @@ estate_mages_organization_religious_loyal = {
 }
 
 estate_mages_development_of_mage_towers_mod = {
-	local_governing_cost_increase = -10
+	local_governing_cost = -0.10 # Submod: nerf mage tower gov cap privilege from flat -10 to percent -10%
 	min_local_autonomy = 5
 }
 
 estate_mages_development_of_mage_towers_improved_mod = {
-	local_governing_cost_increase = -10
+	local_governing_cost = -0.15 # Submod: nerf mage tower gov cap privilege from flat -10 to percent -15%
 	statewide_governing_cost = -0.05
 }
 
