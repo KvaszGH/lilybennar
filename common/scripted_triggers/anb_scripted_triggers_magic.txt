@@ -3421,8 +3421,7 @@ illusion_2_shadows_in_the_night_trigger = { # Shadows in the Night
 illusion_3_lead_the_crowds_trigger = { # Lead the Crowds
 	is_overall_illusion_level_3 = yes
 	[[player] has_mana_to_cast_spell = { school = illusion level = 3 id = lead_the_crowds } ]
-	overextension_percentage = 0.9
-	has_not_cast_lead_the_crowds = yes
+	has_not_cast_lead_the_crowds = yes # Submod: no longer requires 90% overextension
 }
 
 has_cast_invisibility = {
