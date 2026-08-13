@@ -1073,9 +1073,9 @@ illusion_0_invisibility_mod = { # Submod: doubled spy network construction speed
 illusion_1_fear_and_loathing_cooldown_mod = {
 	picture = "illusion_mod_icon_spell_modifier"
 }
-illusion_1_fear_and_loathing_sabotage_mod = { # Submod: added -10% reinforce speed
-	recover_army_morale_speed = -0.05
-	reinforce_speed = -0.10
+illusion_1_fear_and_loathing_sabotage_mod = { # Submod: changed to +15% regiment cost and +100% recruitment speed
+	global_regiment_cost = 0.15
+	global_regiment_recruit_speed = 0.5
 	picture = "illusion_mod_icon_spell_modifier"
 }
 illusion_2_assimilation_program_mod = { # Submod: added -10% dev cost in primary culture (so overall weaker than transmutation still)
@@ -1090,8 +1090,8 @@ illusion_2_shadows_in_the_night_cooldown_mod = {
 	picture = "illusion_mod_icon_spell_modifier"
 }
 illusion_2_shadows_in_the_night_sabotage_mod = { # Submod: reduces siege ability stacking, generally more useful
-	local_garrison_size = -0.50
-	max_hostile_attrition  = -5
+	local_garrison_size = -0.20
+	max_hostile_attrition  = -3
 	picture = "illusion_mod_icon_spell_modifier"
 }
 illusion_3_lead_the_crowds_mod = { # Submod: reworked it from a WC spell to a general big stability spell that might actually be useful (especially in wars)
